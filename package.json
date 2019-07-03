@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha --timeout 10000 && semistandard",
-    "start": "node app.js"
+    "start": "node app.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Ken Perkins <ken.perkins@rackspace.com>",
   "license": "MIT",
@@ -22,7 +24,8 @@
     "restify": "4.0.0",
     "tar-stream": "1.5.1",
     "urljoin": "^0.1.5",
-    "winston": "0.9.0"
+    "winston": "0.9.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "chai": "^3.2.0",
@@ -33,5 +36,6 @@
     "streamifier": "0.1.1",
     "supertest": "^0.15.0",
     "tar-fs": "1.12.0"
-  }
+  },
+  "snyk": true
 }
