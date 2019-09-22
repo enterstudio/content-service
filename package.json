@@ -19,7 +19,7 @@
     "pkgcloud": "1.1.0",
     "raw-body": "2.1.6",
     "request": "^2.69.0",
-    "restify": "4.0.0",
+    "restify": "8.1.0",
     "tar-stream": "1.5.1",
     "urljoin": "^0.1.5",
     "winston": "0.9.0"
